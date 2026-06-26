@@ -1,0 +1,26 @@
+/* Based on styles/1-style.css */
+
+/* Définition de la couleur de texte pour le body */
+body {
+    color: #161616;
+}
+
+/* Définition de la couleur de texte pour tous les liens */
+a {
+    color: #161616;
+}
+
+/* Masquer complètement les éléments avec la classe visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Définition de la couleur de texte pour la classe card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Définition de la couleur de texte pour la classe section-tagline */
+.section-tagline {
+    color: #D73953;
+}
