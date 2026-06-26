@@ -1,0 +1,36 @@
+/* Based on styles/2-style.css */
+
+/* Ciblage de l'élément racine pour définir les variables CSS */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Mise à jour de la couleur du body avec la variable text-color */
+body {
+    color: var(--text-color);
+}
+
+/* Mise à jour de la couleur des liens avec la variable text-color */
+a {
+    color: var(--text-color);
+}
+
+/* Masquer les éléments visually-hidden (inchangé) */
+.visually-hidden {
+    display: none;
+}
+
+/* Remplacement de la couleur par la variable color-primary */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Remplacement de la couleur par la variable color-primary */
+.section-tagline {
+    color: var(--color-primary);
+}
