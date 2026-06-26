@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Liens des réseaux sociaux configurés en bloc */
 .social-link {
     display: block;
-
+}
 
 /* Coloration des éléments SVG enfants des liens sociaux */
 .social-link svg {
