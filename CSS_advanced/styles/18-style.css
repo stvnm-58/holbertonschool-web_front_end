@@ -1,0 +1,192 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/* Règle universelle pour le modèle de boîte (box-sizing) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* Ciblage de l'élément racine pour définir les variables CSS */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+
+    /* Nouvelles variables pour le titre de section */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+
+    /* Variables de mise en page (padding et alignement) */
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+
+    /* Nouvelles variables pour la barre de navigation */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+}
+
+/* Application des styles sur le body */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/* Style des liens pour changer leur couleur et retirer le soulignement par défaut */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* État visité : directement après la déclaration des liens */
+a:visited {
+    font-style: italic;
+}
+
+/* État survolé (hover) : directement après l'état visité */
+a:hover {
+    text-decoration: underline;
+}
+
+/* État actif : directement après l'état survolé */
+a:active {
+    background-color: var(--color-light-grey);
+}
+
+/* Navbar Menu flottant à droite */
+.navbar-menu {
+    float: right;
+}
+
+/* Style de la classe nav */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Style pour .nav-item dans .nav */
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Style pour .nav-link dans .nav */
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* État hover pour .nav-link dans .nav */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+
+/* Masquer les éléments visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Remplacement de la couleur par la variable color-primary */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Classe section placée juste avant l'en-tête de section */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Alignement et espacement du contenu de section-header */
+.section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/* Classe section-body placée juste après section-header */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Classe section-footer placée juste après section-body */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Nouvelle déclaration pour le titre de section, placée juste au-dessus de section-tagline */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Mise à jour de la classe section-tagline */
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Classe container, placée juste après section-tagline */
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ciblage des 6 niveaux de titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Pied de page global ciblé tout à la fin du fichier */
+.footer {
+    padding: var(--footer-padding);
+}
