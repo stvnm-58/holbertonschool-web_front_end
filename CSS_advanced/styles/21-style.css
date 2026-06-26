@@ -146,18 +146,20 @@ ul.row {
     clear: both;
 }
 
-/* Colonne 1/3 */
-.col-1-3 {
-    width: 33.33%;
+/* Ciblage de toutes les classes commençant par "col-" */
+[class^="col-"] {
     float: left;
     padding: 0.5rem;
 }
 
-/* Colonne 1/2 */
+/* Colonne 1/3 (nettoyée des propriétés communes) */
+.col-1-3 {
+    width: 33.33%;
+}
+
+/* Colonne 1/2 (nettoyée des propriétés communes) */
 .col-1-2 {
     width: 50%;
-    float: left;
-    padding: 0.5rem;
 }
 
 /* Remplacement de la couleur par la variable color-primary */
