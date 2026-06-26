@@ -1,0 +1,4 @@
+/* Rend le défilement fluide lorsque le scroll est déclenché sur l'élément HTML */
+html {
+    scroll-behavior: smooth;
+}
