@@ -31,6 +31,7 @@ html {
     --section-header-align: center;
     --section-tagline-transform: uppercase;
 
+    /* Nouvelles variables pour le titre de section */
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
@@ -80,7 +81,7 @@ a[href]:active {
     text-align: var(--section-header-align);
 }
 
-/* Titre de section */
+/* Nouvelle déclaration pour le titre de section, placée juste au-dessus de section-tagline */
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
